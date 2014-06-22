@@ -1,9 +1,9 @@
 ##Background  
-The data tidydata.csv is generated using data from Samsung experiments carried out on wearable devices. The experiments have been carried out with a group of 30 volunteers.  The data set has total 2580 rows 
+The data *tidydata.txt* is generated using data from Samsung experiments carried out on wearable devices. The experiments have been carried out with a group of 30 volunteers.  The data set has total 2580 rows 
 and 8 variables.  
 
 ##Variables  
-The columns() in this tidy data set are  
+The columns in this tidy data set are  
   1. subjectid - this signifies the volunteer id, who participated experimentation.  
   2. features - is a factor variable.  This signifies observation type.  The experimentation recorded various observations of 3-axial linear acceleration and 3-axial angular velocity for various activities(listed below).   This column lists either mean or standard deviation of respective observation.  
   3. WALKING - Mean of "walking" activity recorded for that feature(observation type) for that particular volunteer.  
@@ -21,11 +21,11 @@ All mean values for the activities are normalized and bounded within [-1,1].
    * Read files from the local storage  
    * read all subjects, activities and actual observations for train and test data set
    * concatenate all columns by subject then activities and then all observations for both data sets
-   * clean all observation names and keep only alphaNumericals
-   * add all data proper column names 
+   * clean all observation names(features) and keep only alpha-numericals
+   * add the column headings for data frame
    * merge both data frames 
-   * extract mean columns having mean and Std.Dev observations
+   * extract the columns from data frame having mean and standard deviation observations
    * get the long listing of all observations and their mean or standard deviation value using melt() of reshape2 package.
    * 'cast' into a new shape i.e. data frame for subject + features against activities and using mean as an aggregate function
-   * Write to the csv
+   * Write to the txt
 
