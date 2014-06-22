@@ -1,8 +1,13 @@
 # Contents</br>
 The repository contains </br>
+
 - README.md - describes what are the listings of the repository, including comments on submitted tidy data format.</br>
+
 - Codebook.md - describes columns of tidy data.  Also describes the activities done on raw data to achieve tidy data results</br>
-- Run_analysis.r - the R source code, which transforms following files read from current directory. </br> Further information about code function is in Codebook.md</br>
+
+- Run_analysis.r - the R source code, which transforms following files read from current directory. </br> 
+Further information about code function is in Codebook.md</br>
+
 - 'features.txt': List of all features.</br>
 - 'activity_labels.txt': Links the class labels with their activity name.</br>
 - 'train/X_train.txt': Training set.</br>
